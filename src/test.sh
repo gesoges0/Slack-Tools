@@ -1,9 +1,3 @@
-# Slack-Tools
-this is simple message tool using slackweb
-
-# usage
-
-```
 # notify
 # post simple message
 python main.py notify 'notify message !'
@@ -36,4 +30,3 @@ python main.py show_attachments
 # send_attachments
 python main.py send_attachments -n 0 --text 'main text' --icon_emoji ':thinking_face:' 
 python main.py send_attachments -n 4 --text 'main text' --icon_emoji ':dog:' --thread_ts '1623689860.002100'
-```
