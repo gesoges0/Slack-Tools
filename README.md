@@ -3,21 +3,21 @@ this is simple message tool using slackweb
 
 # usage
 
-## notify
+### notify
 post simple message
 ```
 python main.py notify 'notify message !'
 ```
 ![notify](./img/notify.png)
 
-## send 
+### send 
 post payload including only 1 attachments
 ```
 python main.py send 'send message' --color 'warning' --title 'sample title'
 ```
 ![send](./img/send.png)
 
-## write
+### write
 make json file that contains attachment
 ```
 python main.py write_attachment --color 'danger' --title 'title 0' --text 'text 0'
@@ -27,7 +27,7 @@ python main.py write_attachment -n 3 --color '#ff69b4' --title 'title 3' --text 
 python main.py write_attachment -n 4 --color '#40e0d0' --title 'title 4' --text 'text 4' --image_url 'http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcQuELPI1RkmBQ8W5DF-ewyV-e6dIePOCzpZ2OnuBB1hipBi6woum_ktchntjF9_mGoziP0ZZnKmGtAK_054J4k'
 ```
 
-## show 
+### show 
 show json files you made with write api
 
 show attachment_4 json file
@@ -46,7 +46,7 @@ python main.py show_attachments
 # {'color': '#40e0d0', 'title': 'title 4', 'text': 'text 4', 'image_url': 'http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcQuELPI1RkmBQ8W5DF-ewyV-e6dIePOCzpZ2OnuBB1hipBi6woum_ktchntjF9_mGoziP0ZZnKmGtAK_054J4k'}
 ```
 
-## send_attachments
+### send_attachments
 send payload including attachments you made
 ```
 python main.py send_attachments -n 0 --text 'main text' --icon_emoji ':thinking_face:' 
