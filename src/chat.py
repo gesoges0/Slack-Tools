@@ -40,7 +40,7 @@ def show_attachments(args):
 def get_attachments(no):
     attachments = []
     for i in range(no+1):
-        attachment_json_path = f'./attachment_{i}.json'
+        attachment_json_path = f'/home/gesogeso/デスクトップ/Slack-Tools/attachment_{i}.json'
         with open(attachment_json_path, 'r') as f:
             attachment_dict = json.load(f)
             attachments.append(attachment_dict)
