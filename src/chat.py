@@ -25,7 +25,7 @@ def write_attachment(args):
     image_url = args.image_url
     attachment_no = args.no
     attachment = {'color': color, 'title': title, 'text': text, 'image_url': image_url}
-    with open(f'./attachment_{attachment_no}.json', 'w') as f:
+    with open(f'/home/gesogeso/デスクトップ/Slack-Tools/src/attachment_{attachment_no}.json', 'w') as f:
         json_attachment = json.dump(attachment, f)
 
 def show_attachments(args):
