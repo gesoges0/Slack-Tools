@@ -51,8 +51,9 @@ def send_attachments(args):
     thread_ts = args.thread_ts
     text = args.text
     icon_emoji = args.icon_emoji
+    username = args.username
     attachments = get_attachments(no)
-    payload = {'text': text, 'attachments': attachments, 'icon_emoji': icon_emoji}
+    payload = {'text': text, 'attachments': attachments, 'icon_emoji': icon_emoji, 'username': username}
     if thread_ts:
         payload['thread_ts'] = thread_ts
     slack.send(payload)

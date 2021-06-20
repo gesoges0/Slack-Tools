@@ -41,6 +41,7 @@ if __name__ == '__main__':
     parser_send.add_argument('--no', '-n', default=0, type=int, help='送信するattachmentの数')
     parser_send.add_argument('--thread_ts', default='', type=str, help='thread_ts')
     parser_send.add_argument('--text', default='text', type=str, help='text')
+    parser_send.add_argument('--username', default='incoming-webhook', type=str, help='text')
     parser_send.add_argument('--icon_emoji', default=':dog:', type=str, help='アイコン絵文字')
     parser_send.set_defaults(func=send_attachments)
 
